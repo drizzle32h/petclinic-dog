@@ -18,7 +18,7 @@
     <![endif]-->
 
   <link th:href="@{/webjars/font-awesome/css/font-awesome.min.css}" rel="stylesheet">
-  <link rel="stylesheet" th:href="@{/resources/css/petclinic.css}" />
+  <link rel="stylesheet" th:href="@{/dog/resources/css/petclinic.css}" />
 
 </head>
 
@@ -45,23 +45,23 @@
 
         <ul class="nav navbar-nav me-auto">
 
-          <li th:replace="::menuItem ('/','home','home page','home','Home')">
+          <li th:replace="::menuItem ('/dog','home','home page','home','Home')">
             <span class="fa fa-home" aria-hidden="true"></span>
             <span>Home</span>
           </li>
 
-          <li th:replace="::menuItem ('/owners/find','owners','find owners','search','Find owners')">
+          <li th:replace="::menuItem ('/dog/owners/find','owners','find owners','search','Find owners')">
             <span class="fa fa-search" aria-hidden="true"></span>
             <span>Find owners</span>
           </li>
 
-          <li th:replace="::menuItem ('/vets.html','vets','veterinarians','th-list','Veterinarians')">
+          <li th:replace="::menuItem ('/dog/vets.html','vets','veterinarians','th-list','Veterinarians')">
             <span class="fa fa-th-list" aria-hidden="true"></span>
             <span>Veterinarians</span>
           </li>
 
           <li
-            th:replace="::menuItem ('/oups','error','trigger a RuntimeException to see how it is handled','exclamation-triangle','Error')">
+            th:replace="::menuItem ('/dog/oups','error','trigger a RuntimeException to see how it is handled','exclamation-triangle','Error')">
             <span class="fa exclamation-triangle" aria-hidden="true"></span>
             <span>Error</span>
           </li>
